@@ -365,7 +365,7 @@ export default function HybridProfessional() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-32 px-8 md:px-24 bg-[#07090C]/80 backdrop-blur-sm border-t border-white/5">
+        <section id="about" className="py-32 px-8 md:px-24 pointer-events-auto">
           <div className="reveal-section max-w-4xl grid md:grid-cols-2 gap-16">
             <div>
               <h2 className="text-sm font-mono tracking-widest text-[#2ED9A0] mb-8 uppercase">About Me</h2>
@@ -427,7 +427,7 @@ export default function HybridProfessional() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-32 px-8 md:px-24 bg-[#07090C]">
+        <section id="projects" className="py-32 px-8 md:px-24 pointer-events-auto">
           <div className="reveal-section mb-16">
             <h2 className="text-sm font-mono tracking-widest text-[#2ED9A0] mb-4 uppercase">Selected Work</h2>
             <h3 className="text-5xl md:text-7xl font-bold tracking-tight">Technical Artifacts</h3>
@@ -438,7 +438,7 @@ export default function HybridProfessional() {
               <div 
                 key={project.id} 
                 onClick={() => setActiveProject(project)}
-                className="group cursor-pointer bg-[#11151A]/50 border border-white/10 p-8 rounded-lg hover:border-[#2ED9A0]/50 hover:bg-[#11151A] transition-all duration-300"
+                className="group cursor-pointer border border-white/10 p-8 rounded-lg hover:border-[#2ED9A0]/50 transition-all duration-300"
               >
                 <div className="text-xs font-mono text-[#8B5CF6] mb-4 tracking-widest">{`0${idx + 1}`}</div>
                 <h4 className="text-2xl font-bold mb-4 group-hover:text-[#2ED9A0] transition-colors">{project.title}</h4>
@@ -454,7 +454,7 @@ export default function HybridProfessional() {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="py-32 px-8 md:px-24 bg-[#11151A]/80 backdrop-blur-sm border-t border-white/5">
+        <section id="skills" className="py-32 px-8 md:px-24 pointer-events-auto">
           <div className="reveal-section max-w-5xl mx-auto">
             <h2 className="text-sm font-mono tracking-widest text-[#8B5CF6] mb-16 uppercase">Technical Expertise</h2>
             
@@ -477,7 +477,7 @@ export default function HybridProfessional() {
         </section>
 
         {/* Education Section */}
-        <section className="py-24 px-8 md:px-24 bg-[#07090C] border-t border-white/5">
+        <section className="py-24 px-8 md:px-24 border-t border-white/5 pointer-events-auto">
           <div className="reveal-section max-w-4xl grid md:grid-cols-2 gap-16">
             <div>
               <h2 className="text-sm font-mono tracking-widest text-[#2ED9A0] mb-8 uppercase">Education</h2>
@@ -498,8 +498,8 @@ export default function HybridProfessional() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="min-h-[70vh] flex flex-col justify-center items-center text-center py-32 px-8 bg-[#11151A]/90 backdrop-blur-md border-t border-white/5">
-          <div className="reveal-section">
+        <section id="contact" className="min-h-[70vh] flex flex-col justify-center items-center text-center py-32 px-8 border-t border-white/5 pointer-events-auto">
+          <div className="reveal-section w-full max-w-5xl border border-[#2ED9A0]/20 rounded-2xl p-16">
             <h2 className="text-4xl md:text-7xl font-bold tracking-tight mb-6">Let's build something <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2ED9A0] to-[#8B5CF6]">intelligent.</span></h2>
             <p className="text-[#7D8793] text-lg md:text-xl mb-12 max-w-2xl mx-auto font-light leading-relaxed">
               Interested in AI, intelligent automation, AI agents, or interactive technology? Let's connect.
@@ -513,7 +513,7 @@ export default function HybridProfessional() {
         </section>
 
         {/* Footer */}
-        <footer className="relative z-20 bg-[#07090C] py-12 px-8 md:px-24 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+        <footer className="relative z-20 py-12 px-8 md:px-24 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 pointer-events-auto">
           <div className="flex flex-col items-center md:items-start gap-2">
             <span className="font-bold tracking-[0.3em] text-sm uppercase">Samarth Solanki</span>
             <span className="text-[#2ED9A0] font-mono text-xs tracking-widest uppercase">AI / ML Engineer</span>
