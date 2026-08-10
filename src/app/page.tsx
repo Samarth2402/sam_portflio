@@ -198,9 +198,7 @@ function AINeuralCore({ activeProject }: { activeProject: any }) {
         <bufferGeometry>
           <bufferAttribute
             attach="attributes-position"
-            count={positions.length / 3}
-            array={positions}
-            itemSize={3}
+            args={[positions, 3]}
           />
         </bufferGeometry>
         <pointsMaterial size={0.06} color="#8B5CF6" transparent opacity={0.8} sizeAttenuation />
