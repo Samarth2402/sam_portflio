@@ -13,113 +13,85 @@ import GitHubStats from "@/components/GitHubStats";
 
 const PROJECTS = [
   {
-    id: "ai-recruitment",
-    title: "SVM-Scout (AI Recruitment)",
-    category: "AI / Machine Learning / Recruitment Automation",
-    description: "An intelligent recruitment platform designed to automate and improve the hiring workflow using AI.",
+    id: "svm-scout",
+    title: "SVM Scout",
+    category: "AI-Powered Recruitment & Assessment Platform",
+    description: "Developed an AI-powered recruitment platform to streamline candidate evaluation, technical assessments, aptitude testing, and recruitment workflows.",
     link: "https://svm-scout.up.railway.app",
     details: [
-      "Resume analysis",
-      "Candidate information extraction",
-      "Skill identification",
-      "Candidate-job matching",
-      "Intelligent recruitment workflows",
-      "Aptitude & technical assessment",
-      "AI-assisted candidate evaluation"
+      "Resume parsing and NLP-based skill extraction",
+      "TF-IDF and Support Vector Machine (SVM)-based matching",
+      "Candidate-job relevance scoring and ranking",
+      "Assessment workflows and candidate reports via Groq API"
     ],
     visualConcept: "RESUME → AI ANALYSIS → SKILL EXTRACTION → MATCHING → EVALUATION",
   },
   {
-    id: "testable-ai",
-    title: "Testable AI Testing Agent",
-    category: "AI Agents / Android Testing / Automation",
-    description: "An AI-powered testing system designed to interact with applications and automate software testing workflows.",
-    link: "https://testable.automusk.ai",
+    id: "interactive-bowling",
+    title: "Interactive Bowling",
+    category: "Computer Vision & IoT-Based Projection System",
+    description: "An interactive bowling system combining camera-based computer vision, real-world lane data, and projector-based visual experiences.",
+    link: "",
     details: [
-      "AI agents understand application interfaces",
-      "Interact with applications",
-      "Execute testing actions automatically",
-      "Capture results and identify issues",
+      "Camera-based computer vision for ball detection",
+      "Processing spatial coordinates for interactive visual effects",
+      "Integrating detection results with Unity for real-time animations"
     ],
-    visualConcept: "APPLICATION → AI AGENT → UNDERSTAND UI → EXECUTE ACTION → VERIFY RESULT → REPORT",
+    visualConcept: "LANE DATA → BALL DETECTION → COORDINATE MAPPING → UNITY ANIMATION",
   },
   {
-    id: "archon",
-    title: "Archon",
-    category: "AI / Game Development / Documentation / Automation",
-    description: "An AI-powered workflow that analyzes a game, captures and organizes game screens, and converts findings into structured tasks.",
-    link: "https://archon.automusk.ai",
+    id: "pickleball-analysis",
+    title: "Pickleball Shot Analysis",
+    category: "IoT & Machine Learning",
+    description: "An intelligent pickleball shot analysis system using sensor components embedded in a paddle to capture impact, swing, and motion-related data.",
+    link: "",
     details: [
-      "Analyze game screens & document interfaces",
-      "Organize screenshots & identify relevant info",
-      "Create structured documentation",
-      "Generate and manage tasks through Zoho",
+      "Real-world training data collection for different shots",
+      "Shot classification for forehand, backhand, dink using sensor data",
+      "Analyzing impact and swing patterns for player performance insights"
     ],
-    visualConcept: "GAME → SCREEN ANALYSIS → DOCUMENTATION → TASK GENERATION → ZOHO",
+    visualConcept: "SENSOR DATA → FEATURE EXTRACTION → SHOT CLASSIFICATION → PERFORMANCE INSIGHTS",
   },
   {
-    id: "phone-money-agent",
-    title: "Phone Money Agent",
-    category: "AI Agent / Financial Automation",
-    description: "An intelligent phone-based financial monitoring agent designed to keep track of transactions and relevant financial activity.",
+    id: "go-karting-safety",
+    title: "Go-Karting Safety & Race Analytics",
+    category: "Computer Vision & IoT",
+    description: "A computer vision-based monitoring system to detect potential accidents and stopped karts during live races using camera feeds.",
+    link: "",
     details: [
-      "Monitoring transaction information",
-      "Understanding transaction activity",
-      "Organizing financial events",
-      "Identifying relevant transaction information",
-      "Providing an intelligent overview of activity",
+      "Computer vision monitoring for accident and stopped kart detection",
+      "Real-time event alerts to frontend via backend APIs",
+      "RFID-based kart identification and lap tracking",
+      "Live leaderboard displaying race progress and performance"
     ],
-    visualConcept: "PHONE → TRANSACTION → AI UNDERSTANDING → MONITORING → INSIGHTS",
-  },
-  {
-    id: "offline-wikipedia",
-    title: "Offline Wikipedia",
-    category: "AI / Search / Education",
-    description: "An offline Wikipedia-style search platform designed for schools and colleges to access educational information without internet access.",
-    details: [
-      "Offline knowledge access",
-      "Search and educational content",
-      "Designed for school/college use",
-      "Local information retrieval",
-    ],
-    visualConcept: "KNOWLEDGE DATABASE → SEARCH → EDUCATIONAL CONTENT",
-  },
-  {
-    id: "ai-game-asset",
-    title: "AI Game Asset & Animation Generator",
-    category: "Generative AI / Game Development / 3D / Automation",
-    description: "An AI-powered system for generating and preparing game-ready visual assets and animation workflows from natural-language instructions.",
-    details: [
-      "AI-assisted asset generation",
-      "Game-ready visual assets",
-      "Automated asset processing",
-      "Animation workflows for 2D/3D content",
-      "AI-driven creative pipelines",
-    ],
-    visualConcept: "TEXT PROMPT → AI GENERATION → 3D ASSET → ANIMATION → GAME-READY OUTPUT",
-  },
+    visualConcept: "CAMERA FEED → KART DETECTION → ACCIDENT MONITORING → RFID TRACKING → LEADERBOARD",
+  }
 ];
 
 const SKILLS = [
   {
-    category: "AI / ML",
-    items: ["Artificial Intelligence", "Machine Learning", "AI Agents", "Computer Vision", "Generative AI"],
-  },
-  {
     category: "Programming",
-    items: ["Python", "Java", "JavaScript", "C++", "SQL"],
+    items: ["Python", "SQL", "JavaScript"],
   },
   {
-    category: "Web / Backend",
-    items: ["Django", "Flask", "FastAPI", "React", "Next.js"],
+    category: "Machine Learning",
+    items: ["Scikit-learn", "Supervised Learning", "Classification", "Random Forest", "Support Vector Machine (SVM)", "Model Training"],
   },
   {
-    category: "AI / Automation",
-    items: ["AI Automation", "Agentic Workflows", "Software Testing Automation", "Computer Vision Automation"],
+    category: "Natural Language Processing",
+    items: ["NLP", "TF-IDF", "Text Processing", "Resume Parsing", "Semantic Matching"],
   },
   {
-    category: "Game / Interactive Technology",
-    items: ["Game Technology", "3D Asset Generation", "Animation Workflows"],
+    category: "Computer Vision",
+    items: ["OpenCV", "Image Processing", "Object Detection", "Video Frame Processing"],
+  },
+  {
+    category: "Backend & DB",
+    items: ["Flask", "FastAPI", "Django", "MySQL", "SQLite", "SQLAlchemy", "REST APIs"],
+  },
+  {
+    category: "IoT & Integration",
+    items: ["Sensor Data Processing", "Camera Integration", "RFID Tracking", "Unity Integration", "LLM API Integration"],
   },
 ];
 
@@ -351,10 +323,10 @@ export default function HybridProfessional() {
               SAMARTH SOLANKI
             </h1>
             <p className="mt-4 text-2xl md:text-4xl font-light text-transparent bg-clip-text bg-gradient-to-r from-[#2ED9A0] to-[#8B5CF6]">
-              AI / ML ENGINEER
+              AI / ML ENGINEER & PYTHON DEVELOPER
             </p>
             <p className="mt-8 text-lg md:text-xl text-[#7D8793] max-w-2xl font-light leading-relaxed">
-              Building intelligent systems, automation platforms, AI agents, and interactive technology.
+              Building AI-powered applications, machine learning solutions, and intelligent automation systems.
             </p>
           </div>
           
@@ -375,10 +347,10 @@ export default function HybridProfessional() {
             </div>
             <div className="flex flex-col justify-end">
               <p className="text-[#7D8793] text-lg leading-relaxed mb-6">
-                I am an AI/ML Engineer with 1.5+ years of professional experience building intelligent applications, AI agents, automation systems, computer-vision workflows, and AI-powered developer tools.
+                I am an AI/ML Engineer and Python Developer with approximately 1 year and 8 months of professional experience developing AI-powered applications, machine learning solutions, backend APIs, and intelligent automation systems.
               </p>
               <p className="text-[#7D8793] text-lg leading-relaxed mb-8">
-                My work focuses on turning complex workflows into intelligent systems that can understand information, automate tasks, analyze data, interact with software, and assist users.
+                My work focuses on building scalable, data-driven solutions that connect AI models with real-world applications, including AI-driven recruitment platforms, computer vision, and IoT-integrated systems.
               </p>
               <div className="flex gap-4 mt-8">
                 <a href="https://www.linkedin.com/in/samarth-solanki1902" target="_blank" rel="noopener noreferrer" className="text-xs font-mono px-6 py-3 border border-[#2ED9A0]/50 hover:bg-[#2ED9A0]/10 text-[#2ED9A0] rounded-full transition-colors cursor-pointer">
@@ -402,24 +374,24 @@ export default function HybridProfessional() {
               {/* Capermint */}
               <div className="border-l border-[#2ED9A0] pl-8 relative">
                 <div className="absolute w-3 h-3 bg-[#2ED9A0] rounded-full -left-[1.5px] top-2" />
-                <h3 className="text-3xl font-bold mb-2">Capermint Technology</h3>
-                <p className="text-xl text-[#2ED9A0] mb-4">AI/ML Engineer <span className="text-[#7D8793] text-sm font-mono ml-4">PRESENT</span></p>
+                <h3 className="text-3xl font-bold mb-2">Capermint Technologies</h3>
+                <p className="text-xl text-[#2ED9A0] mb-4">AI/ML Engineer / Python Developer <span className="text-[#7D8793] text-sm font-mono ml-4">18 May 2026 – Present</span></p>
                 <ul className="text-[#7D8793] space-y-2 list-none">
-                  <li>— AI/ML Development & Agentic Systems</li>
-                  <li>— Game Technology & Automation Workflows</li>
-                  <li>— Computer Vision & Intelligent Tools</li>
+                  <li>— Develop Python-based AI/ML solutions involving computer vision and sensor data processing</li>
+                  <li>— Collect and prepare training data, improving detection and classification accuracy</li>
+                  <li>— Integrate AI models and IoT components with backend APIs and frontend applications</li>
                 </ul>
               </div>
 
               {/* Isoftrend */}
               <div className="border-l border-white/10 pl-8 relative">
                 <div className="absolute w-3 h-3 bg-white/20 rounded-full -left-[1.5px] top-2" />
-                <h3 className="text-3xl font-bold mb-2 text-white/80">Isoftrend System</h3>
-                <p className="text-xl text-white/60 mb-4">AI/ML Engineer <span className="text-[#7D8793] text-sm font-mono ml-4">Ahmedabad, Gujarat</span></p>
+                <h3 className="text-3xl font-bold mb-2 text-white/80">iSoftrend System</h3>
+                <p className="text-xl text-white/60 mb-4">Python Developer / AI/ML Engineer <span className="text-[#7D8793] text-sm font-mono ml-4">1 Feb 2025 – 17 May 2026</span></p>
                 <ul className="text-[#7D8793] space-y-2 list-none">
-                  <li>— Intelligent Application Development</li>
-                  <li>— Automation & Python-based systems</li>
-                  <li>— AI Integrations & Practical Production Engineering</li>
+                  <li>— Developed Python-based backend applications and REST APIs using Flask/FastAPI</li>
+                  <li>— Implemented machine learning and NLP workflows, including text preprocessing and model-based matching</li>
+                  <li>— Integrated AI services and application components to automate business workflows</li>
                 </ul>
               </div>
             </div>
@@ -486,12 +458,11 @@ export default function HybridProfessional() {
               <div>
                 <h3 className="text-2xl font-bold text-white mb-1">LJ University</h3>
                 <p className="text-[#7D8793]">Master of Computer Applications (MCA)</p>
-                <p className="text-xs font-mono text-[#8B5CF6] mt-2 tracking-widest">Ahmedabad, Gujarat</p>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-white mb-1">Shree Swaminarayan Gurukul</h3>
+                <h3 className="text-2xl font-bold text-white mb-1">Swaminarayan College of Computer Science</h3>
                 <p className="text-[#7D8793]">Bachelor of Computer Applications (BCA)</p>
-                <p className="text-xs font-mono text-[#8B5CF6] mt-2 tracking-widest uppercase">Bhavnagar, Gujarat</p>
+                <p className="text-xs font-mono text-[#8B5CF6] mt-2 tracking-widest uppercase">2024 | 61.8%</p>
               </div>
             </div>
           </div>
