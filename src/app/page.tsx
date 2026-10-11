@@ -65,6 +65,34 @@ const PROJECTS = [
       "Live leaderboard displaying race progress and performance"
     ],
     visualConcept: "CAMERA FEED → KART DETECTION → ACCIDENT MONITORING → RFID TRACKING → LEADERBOARD",
+  },
+  {
+    id: "archon",
+    title: "Archon",
+    category: "AI / Game Development / Documentation / Automation",
+    description: "An AI-powered workflow that analyzes a game, captures and organizes game screens, and converts findings into structured tasks.",
+    link: "https://archon.automusk.ai",
+    details: [
+      "Analyze game screens & document interfaces",
+      "Organize screenshots & identify relevant info",
+      "Create structured documentation",
+      "Generate and manage tasks through Zoho",
+    ],
+    visualConcept: "GAME → SCREEN ANALYSIS → DOCUMENTATION → TASK GENERATION → ZOHO",
+  },
+  {
+    id: "phone-money-agent",
+    title: "Phone Money Agent",
+    category: "AI Agent / Financial Automation",
+    description: "An intelligent phone-based financial monitoring agent designed to keep track of transactions and relevant financial activity.",
+    details: [
+      "Monitoring transaction information",
+      "Understanding transaction activity",
+      "Organizing financial events",
+      "Identifying relevant transaction information",
+      "Providing an intelligent overview of activity",
+    ],
+    visualConcept: "PHONE → TRANSACTION → AI UNDERSTANDING → MONITORING → INSIGHTS",
   }
 ];
 
